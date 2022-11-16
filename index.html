@@ -8,36 +8,75 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <form id="role">
-            Role
-            <select id="selectedrole">
-                <option value="developer" >Developer</option>
+    <header>
+        <h1>ROOM ALLOCATION</h1> 
+        <h3>A highly intensive developer training facility,<br>
+             Only 24 people can stay at the facility at any one point in time.</h3>
+    </header><br>
+    
+
+    <div class="form-control">
+        <div>
+            <input 
+                    id="dev-name"
+                    class="dev-name"
+                    type="text"
+                    placeholder="Enter Name"
+                    />
+        </div><br>
+
+        <form id="role"> 
+            <select id="selectedrole" class="option">
+                <option value="" disabled selected>Select a role</option>
+                <option value="developer">Developer</option>
                 <option value="facilitator">Facilitator</option>
                 
             </select>
-        </form>
-        <form id="stack">
-            Stack
-            <select id="selectedstack">
+        </form><br>
+
+        <form id="stack"> 
+            <select id="selectedstack" class="option">
+                <option value="" disabled selected>Select your stack</option>
                 <option value="web3">Web 3</option>
                 <option value="frontend">Front End</option>
                 <option value="backend">Back End</option>
+                <option value="facilitator">Full Stack</option>
             </select>
-        </form>
+        </form><br>
+
         <form id="room">
-            Rooms
-            <select id="selectedroom">
-                <option value="1">RM 1</option>
-                <option value="2">RM 2</option>
-                <option value="3">RM 3</option>
-                <option value="4">RM 4</option>
-                <option value="5">RM 5</option>
-                <option value="6">RM 6</option>
+            <select id="selectedroom" class="option">
+                <option value="" disabled selected>Select a room</option>
+                <option value="1">ROOM 1</option>
+                <option value="2">ROOM 2</option>
+                <option value="3">ROOM 3</option>
+                <option value="4">ROOM 4</option>
+                <option value="5">ROOM 5</option>
+                <option value="6">ROOM 6</option>
             </select>
-        </form>
-        <button id="submitForm">Assign</button>
-    </div>
+        </form><br>
+
+        <button id="submitForm">Join</button>
+
+    </div><br>
+
+    <div class="table">
+        <table>
+          <tr>
+            <th>NAME</th>
+            <th>ROLE</th>
+            <th>STACK</th>
+            <th>ROOM</th>
+          </tr>
+          <tr>
+            <td>Maria Anders</td>
+            <td>Facilitator</td>
+            <td> - </td>
+            <td> Room 1 </td>
+          </tr>
+        </table>
+      </div>
     <script src="script.js"></script>
+
 </body>
 </html>
