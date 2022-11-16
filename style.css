@@ -1,10 +1,76 @@
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: white;
     background-color: blueviolet;
+    font-family: sans-serif;
 }
 
+header{
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.form-control{
+    text-align: center;
+}
+
+.dev-name {
+    font-size: 17px;
+    width: 320px;
+    padding: 10px 10px;
+    border: 3px solid hsla(279, 6%, 55%, 0.5);
+    color: black;
+    background-color: rgb(243, 240, 245);
+    border-radius: 5px;
+}
+
+form{
+    font-family: arial, sans-serif;
+}
+
+.option{
+    font-size: 17px;
+    width: 350px;
+    padding: 10px 10px;
+    border: 3px solid hsla(279, 6%, 55%, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submitForm{
+    background-color: rgb(213, 205, 221);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.table{
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    
+    
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    padding: 50px;
+    
+  }
+  
+  td, th {
+    border: px solid hsla(279, 6%, 55%, 0.5);
+    color: black;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #b9b3b3;
+  }
 
