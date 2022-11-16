@@ -29,6 +29,7 @@ submit.addEventListener('click', handleSubmit)
         return false;
         } else {
             individualRoom.push(selectedStack)
+            alert('Registration Successful!')
         }
 
 
