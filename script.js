@@ -30,6 +30,23 @@ submit.addEventListener('click', handleSubmit)
         } else {
             individualRoom.push(selectedStack)
             alert('Registration Successful!')
+            table.innerHTML =`
+            <table>
+                <tr>
+                    <th>NAME</th>
+                    <th>ROLE</th>
+                    <th>STACK</th>
+                    <th>ROOM</th>
+                </tr>
+    
+                <tr>
+                    <td>${devname.value}</td>
+                    <td>${selectedRole}</td>
+                    <td>${selectedStack} </td>
+                    <td>${selectedRoom}</td>
+                </tr>
+            </table>
+            `
         }
 
 
